@@ -1,0 +1,17 @@
+.input {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-0);
+	width: 100%;
+}
+
+.field {
+	border-radius: var(--spacing-0);
+	padding: var(--spacing-0);
+	background-color: transparent;
+	color: var(--c-secondary);
+}
+
+.label {
+	text-transform: capitalize;
+}

@@ -1,0 +1,26 @@
+@use "./reset.scss";
+@use "./variables.scss";
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: var(--c-primary);
+	background-color: var(--c-bg-default);
+	background-image: url("/noise.svg");
+	background-repeat: repeat;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.sr-only {
+	position: absolute;
+	left: -1000vw;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
