@@ -1,6 +1,8 @@
 # Cart App
 
-I tried to mimick a real-world app as much as possible while still keeping it simple. 
+I tried to mimick a real-world app as much as possible while still keeping it simple.
+
+> The toast implementation is pretty adhoc, real world toasts would need much more logic than I currently have.
 
 This app is built with React, TypeScript, Zod, react-hook-forms, Sass, CSSModules, Vite, and Zustand for state
 management. I'm using pnpm as the package manager.
@@ -20,8 +22,9 @@ management. I'm using pnpm as the package manager.
 
 This project is pretty tiny and straightforward. I took care of some main, important bits:
 
-- **Accessibility**: Form errors and toasts (notifications) are screen-reader-friendly, colours are accessible, HTML is
-  using standard elements, and animations are constrained behind prefers-reduced-motion.
+- **Accessibility**: Form errors and toasts (notifications) are screen-reader-friendly, form field requirements are
+  interactive, colours are accessible, HTML is
+  using standard elements, and animations only run behind prefers-reduced-motion: no-preference.
 - **Performance**: react-hook-forms is a blazing fast form management solution for React. Zod is an amazing, type-safe
   validation library that is also super fast.
 - **Developer experience**: Vite is a super fast bundler, ensuring smooth dev env

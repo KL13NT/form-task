@@ -44,8 +44,7 @@ export const Input = ({
       })}
     >
       <label htmlFor={id} className={styles.label}>
-        {label}
-        {required && <span className="text-red-500">*</span>}
+        {label} {required ? "(required)" : "optional"}
       </label>
       <Controller
         control={control}
@@ -55,7 +54,9 @@ export const Input = ({
             {...props}
             {...field}
             id={id}
-            aria-describedby={`${id}-error`}
+            aria-invalid={Boolean(error)}
+            required={required}
+            aria-describedby={`${id}-requirements ${id}-error`}
             className={styles.field}
           />
         )}

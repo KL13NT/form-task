@@ -1,21 +1,19 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useToasts } from "~/stores/toast";
 
 import styles from "./Toast.module.scss";
 
 export const Toast = () => {
   const { toasts, removeToast } = useToasts();
+  const timers = useRef<number[]>([]);
 
   useEffect(() => {
-    const timerIds = toasts.map((toast) =>
-      window.setTimeout(() => {
-        removeToast(toast.id);
-      }, 5000)
-    );
-
-    return () => {
-      timerIds.forEach((timerId) => window.clearTimeout(timerId));
-    };
+    timers.current = toasts
+      .filter((toast) => !timers.current.includes(toast.id))
+      .map((toast) => {
+        setTimeout(() => removeToast(toast.id), 2000);
+        return toast.id;
+      });
   }, [toasts, removeToast]);
 
   return (
