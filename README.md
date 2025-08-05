@@ -1,8 +1,10 @@
-# Cart App
+# Accessible Form
 
 I tried to mimick a real-world app as much as possible while still keeping it simple.
 
 > The toast implementation is pretty adhoc, real world toasts would need much more logic than I currently have.
+>
+> If you're building a custom auth system based on JWT, make sure to use service workers for it. I didn't include actual auth in this. 
 
 This app is built with React, TypeScript, Zod, react-hook-forms, Sass, CSSModules, Vite, and Zustand for state
 management. I'm using pnpm as the package manager.
