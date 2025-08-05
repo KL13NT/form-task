@@ -1,5 +1,7 @@
 # Cart App
 
+I tried to mimick a real-world app as much as possible while still keeping it simple. 
+
 This app is built with React, TypeScript, Zod, react-hook-forms, Sass, CSSModules, Vite, and Zustand for state
 management. I'm using pnpm as the package manager.
 
