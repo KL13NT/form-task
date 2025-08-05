@@ -28,7 +28,6 @@ This project is pretty tiny and straightforward. I took care of some main, impor
 - **Performance**: react-hook-forms is a blazing fast form management solution for React. Zod is an amazing, type-safe
   validation library that is also super fast.
 - **Developer experience**: Vite is a super fast bundler, ensuring smooth dev env
-- **Testing**: Vitest is super fast, has the same functionalities as Jest, and integrates well with Vite
 - **Hassle-free TS**: Used ts-reset to eliminate some of TypeScript's pain points
 - **Easy peasy file linking**: Import path aliases
 
