@@ -13,7 +13,6 @@ management. I'm using pnpm as the package manager.
 
 - [Getting Started](#getting-started)
 - [Technology Stack \& Decisions](#technology-stack--decisions)
-- [Configuration options and tools I didn't include because the project isn't large enough](#configuration-options-and-tools-i-didnt-include-because-the-project-isnt-large-enough)
 
 ## Getting Started
 
